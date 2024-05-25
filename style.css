@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(180deg, #f0f4f8 0%, #d9e2ec 100%);
+}
+
+#loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#loading img {
+    width: 100px; 
+    height: auto;
+}
+
+.container-background {    
+    width: 900px;
+    height: 500px;
+    box-shadow: 2px 1.5px 5px rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    background: linear-gradient(180deg, #609ef5 0%, #719eb4 100%);
+    padding: 20px;
+}
+
+.container-weather {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    width: 100%; 
+    height: 100%;
+}
+
+.weather-item {
+    height: 300px;
+}
+
+.item1 {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: relative;
+}
+
+#city_name {
+    font-size: 3.5rem;
+    color: #fff;
+    font-weight: bolder;
+}
+
+#date {
+    font-size: 1.9rem;
+    font-weight: bolder;
+    opacity: 0.9;
+    color: #fff;
+    margin-top: 15px;
+}
+
+.imgWeather{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#weather_icon {
+    margin: 0 auto;
+    width: 175px; 
+    height: 175px;
+    text-align: center;
+}
+
+#weather_description {
+    font-weight: bolder;
+    font-size: 3rem;
+    margin-top: 15px;
+    color: white;
+    text-align: start;
+}
+
+.item2 {
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-content: end;
+    gap: 50px;
+}
+
+.item2 article {
+    display: flex;
+    gap: 5px;
+    font-size: 3.7rem;
+    font-weight: bold;
+    color: #fff;
+    opacity: 0.8;
+}
+
+.item2 h2 {
+    font-size: 5rem;
+    color: #fff;
+    opacity: 0.9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#rainProbability {
+    color: blue;
+    font-weight: bolder;
+}
+
+.container-rain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-rain i {
+    font-size: 2.6rem;
+    margin-right: 10px;
+}
+
+
+#humidity {
+    font-size: 2rem;
+    font-weight: bolder;
+}
