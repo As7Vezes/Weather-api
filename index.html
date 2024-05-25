@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather and Location Example</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.34/moment-timezone-with-data.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/pt.min.js"></script>
+    </script>
+    <script src="https://kit.fontawesome.com/d351abc88a.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <section class="container-background">
+        <div id="loading" style="display: none;">
+            <img src="img/loadGif.gif" alt="Carregando...">
+        </div>
+        <article class="container-weather">
+            <section class="weather-item item1">
+                <h3 id="city_name"></h3>
+                <time id="date"></time>
+                <figure class="imgWeather">
+                    <img id="weather_icon" src="" alt="Weather Icon">
+                    <figcaption id="weather_description"></figcaption>
+                </figure>
+            </section>
+            <section class="weather-item item2">
+                <h2 id="temperature"></h2>
+                <article class="container-rain">
+                    <i class="fa-solid fa-cloud-rain"></i>
+                    <span id="rainProbability"></span>
+                </article>
+                <article>
+                    <span id="humidity"></span>
+                </article>
+            </section>
+        </article>
+    </section>
+</body>
+</html>
